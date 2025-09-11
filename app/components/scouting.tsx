@@ -383,7 +383,7 @@ export default function Scouting() {
               <div className="grid grid-cols-[120px_1fr_1fr_1fr] gap-y-2 gap-x-4">
                 {[4, 3, 2, 1].map(l => (
                   <React.Fragment key={`auto-l${l}`}>
-                    <span className="level-label col-span-1 flex items-center font-semibold text-black">L{l}</span>
+                    <span className={`level-label col-span-1 flex items-center font-semibold ${darkMode ? "text-white" : "text-black"}`}>L{l}</span>
                     <button className={`counter-btn plus col-span-1 w-12 h-12 flex items-center justify-center rounded-full text-3xl shadow-lg transition ${darkMode ? 'bg-black text-white hover:bg-gray-800' : 'bg-gray-600 text-white hover:bg-gray-700'}`} type="button" onClick={() => updateCounter(`auto-l${l}`, 1)}>+</button>
                     <div className="counter-display col-span-1 w-16 h-10 border-2 border-gray-400 rounded-full flex items-center justify-center bg-gray-50 text-lg font-bold text-black">{counters[`auto-l${l}`]}</div>
                     <button className={`counter-btn minus col-span-1 w-12 h-12 flex items-center justify-center rounded-full text-3xl shadow-lg transition ${darkMode ? 'bg-black text-white hover:bg-gray-800' : 'bg-gray-600 text-white hover:bg-gray-700'}`} type="button" onClick={() => updateCounter(`auto-l${l}`, -1)}>-</button>
@@ -391,14 +391,14 @@ export default function Scouting() {
                 ))}
                 {["net", "processor"].map(type => (
                   <React.Fragment key={`auto-${type}`}>
-                    <span className="level-label col-span-1 flex items-center font-semibold capitalize text-black">{type}</span>
+                    <span className={`level-label col-span-1 flex items-center font-semibold capitalize ${darkMode ? "text-white" : "text-black"}`}>{type}</span>
                     <button className={`counter-btn plus col-span-1 w-12 h-12 flex items-center justify-center rounded-full text-3xl shadow-lg transition ${darkMode ? 'bg-black text-white hover:bg-gray-800' : 'bg-gray-600 text-white hover:bg-gray-700'}`} type="button" onClick={() => updateCounter(`auto-${type}`, 1)}>+</button>
                     <div className="counter-display col-span-1 w-16 h-10 border-2 border-gray-400 rounded-full flex items-center justify-center bg-gray-50 text-lg font-bold text-black">{counters[`auto-${type}`]}</div>
                     <button className={`counter-btn minus col-span-1 w-12 h-12 flex items-center justify-center rounded-full text-3xl shadow-lg transition ${darkMode ? 'bg-black text-white hover:bg-gray-800' : 'bg-gray-600 text-white hover:bg-gray-700'}`} type="button" onClick={() => updateCounter(`auto-${type}`, -1)}>-</button>
                   </React.Fragment>
                 ))}
                 <React.Fragment key="auto-algea-removed">
-                  <span className="level-label col-span-1 flex items-center font-semibold text-black">Algea removed</span>
+                  <span className={`level-label col-span-1 flex items-center font-semibold ${darkMode ? "text-white" : "text-black"}`}>Algea removed</span>
                   <button className={`counter-btn plus col-span-1 w-12 h-12 flex items-center justify-center rounded-full text-3xl shadow-lg transition ${darkMode ? 'bg-black text-white hover:bg-gray-800' : 'bg-gray-600 text-white hover:bg-gray-700'}`} type="button" onClick={() => updateCounter('auto-algea-removed', 1)}>+</button>
                   <div className="counter-display col-span-1 w-16 h-10 border-2 border-gray-400 rounded-full flex items-center justify-center bg-gray-50 text-lg font-bold text-black">{counters['auto-algea-removed']}</div>
                   <button className={`counter-btn minus col-span-1 w-12 h-12 flex items-center justify-center rounded-full text-3xl shadow-lg transition ${darkMode ? 'bg-black text-white hover:bg-gray-800' : 'bg-gray-600 text-white hover:bg-gray-700'}`} type="button" onClick={() => updateCounter('auto-algea-removed', -1)}>-</button>
@@ -415,7 +415,7 @@ export default function Scouting() {
               <div className="grid grid-cols-[120px_1fr_1fr_1fr] gap-y-2 gap-x-4">
                 {[4, 3, 2, 1].map(l => (
                   <React.Fragment key={`teleop-l${l}`}>
-                    <span className="level-label col-span-1 flex items-center font-semibold text-black">L{l}</span>
+                    <span className={`level-label col-span-1 flex items-center font-semibold ${darkMode ? "text-white" : "text-black"}`}>L{l}</span>
                     <button className={`counter-btn plus col-span-1 w-12 h-12 flex items-center justify-center rounded-full text-3xl shadow-lg transition ${darkMode ? 'bg-black text-white hover:bg-gray-800' : 'bg-gray-600 text-white hover:bg-gray-700'}`} type="button" onClick={() => updateCounter(`teleop-l${l}`, 1)}>+</button>
                     <div className="counter-display col-span-1 w-16 h-10 border-2 border-gray-400 rounded-full flex items-center justify-center bg-gray-50 text-lg font-bold text-black">{counters[`teleop-l${l}`]}</div>
                     <button className={`counter-btn minus col-span-1 w-12 h-12 flex items-center justify-center rounded-full text-3xl shadow-lg transition ${darkMode ? 'bg-black text-white hover:bg-gray-800' : 'bg-gray-600 text-white hover:bg-gray-700'}`} type="button" onClick={() => updateCounter(`teleop-l${l}`, -1)}>-</button>
@@ -423,14 +423,14 @@ export default function Scouting() {
                 ))}
                 {["net", "processor"].map(type => (
                   <React.Fragment key={`teleop-${type}`}>
-                    <span className="level-label col-span-1 flex items-center font-semibold capitalize text-black">{type}</span>
+                    <span className={`level-label col-span-1 flex items-center font-semibold capitalize ${darkMode ? "text-white" : "text-black"}`}>{type}</span>
                     <button className={`counter-btn plus col-span-1 w-12 h-12 flex items-center justify-center rounded-full text-3xl shadow-lg transition ${darkMode ? 'bg-black text-white hover:bg-gray-800' : 'bg-gray-600 text-white hover:bg-gray-700'}`} type="button" onClick={() => updateCounter(`teleop-${type}`, 1)}>+</button>
                     <div className="counter-display col-span-1 w-16 h-10 border-2 border-gray-400 rounded-full flex items-center justify-center bg-gray-50 text-lg font-bold text-black">{counters[`teleop-${type}`]}</div>
                     <button className={`counter-btn minus col-span-1 w-12 h-12 flex items-center justify-center rounded-full text-3xl shadow-lg transition ${darkMode ? 'bg-black text-white hover:bg-gray-800' : 'bg-gray-600 text-white hover:bg-gray-700'}`} type="button" onClick={() => updateCounter(`teleop-${type}`, -1)}>-</button>
                   </React.Fragment>
                 ))}
                 <React.Fragment key="teleop-algea-removed">
-                  <span className="level-label col-span-1 flex items-center font-semibold text-black">Algea removed</span>
+                  <span className={`level-label col-span-1 flex items-center font-semibold ${darkMode ? "text-white" : "text-black"}`}>Algea removed</span>
                   <button className={`counter-btn plus col-span-1 w-12 h-12 flex items-center justify-center rounded-full text-3xl shadow-lg transition ${darkMode ? 'bg-black text-white hover:bg-gray-800' : 'bg-gray-600 text-white hover:bg-gray-700'}`} type="button" onClick={() => updateCounter('teleop-algea-removed', 1)}>+</button>
                   <div className="counter-display col-span-1 w-16 h-10 border-2 border-gray-400 rounded-full flex items-center justify-center bg-gray-50 text-lg font-bold text-black">{counters['teleop-algea-removed']}</div>
                   <button className={`counter-btn minus col-span-1 w-12 h-12 flex items-center justify-center rounded-full text-3xl shadow-lg transition ${darkMode ? 'bg-black text-white hover:bg-gray-800' : 'bg-gray-600 text-white hover:bg-gray-700'}`} type="button" onClick={() => updateCounter('teleop-algea-removed', -1)}>-</button>
