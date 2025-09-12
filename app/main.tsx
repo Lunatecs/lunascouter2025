@@ -17,7 +17,7 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-const router = createBrowserRouter(routes, { basename: '/LunaScouter' });
+const router = createBrowserRouter(routes, { basename: '/lunascouter2025' });
 
 createRoot(document.getElementById('root') as HTMLElement).render(
   <StrictMode>
