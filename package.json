@@ -2,7 +2,7 @@
   "name": "lunascouter",
   "private": true,
   "type": "module",
-  "homepage": "https://RetroAnimatedyt.github.io/LunaScouter/",
+  "homepage": "https://lunatecs.github.io/lunascouter2025/",
   "scripts": {
     "build": "vite build",
     "dev": "vite",
