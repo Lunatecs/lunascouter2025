@@ -27,7 +27,7 @@ export default defineConfig({
             type: "image/x-icon"
           }
         ],
-        start_url: ".",
+        start_url: "/lunascouter2025/",
         display: "standalone",
         background_color: "#ffffff"
       },
