@@ -6,7 +6,7 @@ import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
   root: ".",
-  base: "/LunaScouter/",
+  base: "/lunascouter2025/",
   build: {
     outDir: "dist",
   },
